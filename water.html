@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="water.css">
+    <title>Your Canvas Title</title>
+</head>
+<body>
+    <div class="overlay-text">Step out onto the pavement</div>
+  
+    <script>
+        function displayErrorMessage() {
+            // Show the updated error message
+            alert("It's raining today. Let's stay dry.");
+
+            // Redirect to another HTML page after clicking "OK"
+            window.location.href = "umbrella.html";
+        }
+
+        // Set a timeout to call the function after 15 seconds
+        setTimeout(displayErrorMessage, 15000); // 15 seconds in milliseconds
+    </script>
+
+    <!-- Include the p5.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <!-- Include your water.js script -->
+    <script src="water.js"></script>
+
+    <div class="overlay-text">Step out onto the pavement</div>
+</body>
+</html>

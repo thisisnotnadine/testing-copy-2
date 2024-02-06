@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="houses.css">
+    <title>Halftone Effect</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer"></div>
+    <img id="followMouseImage" src="footprints-minimalized.gif" alt="Footprints Minimalized">
+    <audio id="backgroundAudio" loop>
+        <source src="footstepswalking.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="centeredLink">
+        <a href="#" id="nextPageButton">Take a break</a>
+    </div>
+
+    <script src="houses.js"></script>
+    <script>
+var nextPageLinks = ["butterfly.html", "leaves.html", "virtual-bookshelf-main/bookshelf.html","nuts.html","pockets.html"];
+
+        var randomIndex = Math.floor(Math.random() * nextPageLinks.length);
+
+        document.getElementById("nextPageButton").href = nextPageLinks[randomIndex];
+    </script>
+</body>
+</html>

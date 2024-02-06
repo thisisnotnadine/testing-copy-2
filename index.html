@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/walk.svg" class="logo">
+            <ul>
+                <li><a href="aboutpage.html">About this project</a></li>
+                <li><a href="list.html">Link to all minisites</a></li>
+                <li><a href="https://nadinemacapagal.cargo.site">Documented and created by Nadine Macapagal</a></li>
+            </ul>
+        </nav>
+
+        <div class="middle-button">
+            <a href="#" id="nextPageButton" class="first-step-button">Take your first step.</a>
+        </div>
+    </div>
+
+    <script src="homepage.js"></script>
+    <script>
+        var nextPageLinks = ["houses.html", "water.html"];
+
+        var randomIndex = Math.floor(Math.random() * nextPageLinks.length);
+
+        document.getElementById("nextPageButton").href = nextPageLinks[randomIndex];
+    </script>
+</body>
+</html>

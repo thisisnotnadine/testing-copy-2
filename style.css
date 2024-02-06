@@ -1,0 +1,23 @@
+body {
+  margin: 0; /* Remove default margin to ensure the canvas fills the entire viewport */
+}
+
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.link-container {
+  position: absolute;
+  top: calc(100% - 30px); /* Adjust the distance from the bottom as needed */
+  left: 50%; /* Center the link horizontally */
+  transform: translateX(-50%); /* Center the link horizontally */
+}
+
+a {
+  text-decoration: none;
+  color: #000; /* Set the color of the link text */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Optionally make the text bold */
+}

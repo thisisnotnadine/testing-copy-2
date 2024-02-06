@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('hadns.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #container {
+    display: flex; /* Use flex to arrange both the image pile and text container */
+    align-items: center;
+  }
+  
+  #imagePile {
+    position: relative;
+    width: 350px; /* Adjust the width of the container as needed */
+    height: 500px; /* Adjust the height of the container as needed */
+  }
+  
+  .pileImage {
+    position: absolute;
+    width: 150px; /* Adjust the width of the images as needed */
+    height: 120px; /* Adjust the height of the images as needed */
+  }
+  
+  #textContainer {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded corners */
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Adjust the margin to move the text box to the left */
+  }
+  
+  #textContainer p {
+    margin: 0;
+  }
+  
+  #textContainer button {
+    margin-top: 10px;
+  }
+  

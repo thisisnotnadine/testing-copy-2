@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 725.28 264.22">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: NimbusRomD-Reg, 'Nimbus Roman D';
+        font-size: 72px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        font-family: Sloop-ScriptOne, Sloop;
+        font-size: 100px;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.79 84.83) scale(1 1.1)"><tspan class="cls-2" x="0" y="0">An</tspan><tspan class="cls-3" x="86.9" y="0">a</tspan><tspan class="cls-6" x="118.01" y="0">t</tspan><tspan class="cls-5" x="138.74" y="0">o</tspan><tspan class="cls-4" x="174.89" y="0">m</tspan><tspan class="cls-5" x="229.03" y="0" xml:space="preserve">y Of A   alk</tspan></text>
+  <text class="cls-7" transform="translate(380.14 85.25)"><tspan x="0" y="0">W</tspan></text>
+</svg>

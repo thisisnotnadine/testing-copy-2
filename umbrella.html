@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raining with ASCII Umbrella</title>
+    <link rel="stylesheet" type="text/css" href="umbrella.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            opacity: 1;
+            transition: opacity 4s ease; /* Set the duration and easing function */
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="umbrella.js"></script>
+
+    <script>
+        // Set a timeout to fade out after 20 seconds
+        setTimeout(() => {
+            document.body.classList.add('hidden');
+            
+            // Redirect to the new HTML page after the fade-out
+            setTimeout(() => {
+                window.location.href = "thesun.html";
+            }, 2000); // Wait for the transition duration (2 seconds in this case)
+        }, 20000); // 20 seconds in milliseconds
+    </script>
+</body>
+</html>

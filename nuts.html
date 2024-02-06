@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .acorn, img[id^="image"] {
+            position: absolute;
+            pointer-events: none;
+        }
+        #image3 {
+            position: absolute;
+            width: 1000px; /* Adjust the width of img3 */
+            height: auto; /* Maintain aspect ratio */
+            pointer-events: none;
+        }
+
+        #buttonContainer {
+            position: absolute;
+            bottom: 40px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <img id="image1" src="top2.jpeg" alt="Image 1">
+    <img id="image2" src="bottom right.webp" alt="Image 2">
+    <img id="image3" src="topL.jpeg" alt="Image 3">
+    <img id="image4" src="bottom left.webp" alt="Image 4">
+    <img id="image5" src="middle.jpeg" alt="Image 5">
+    <img id="acorn" src="acorn.png" alt="Acorn" class="acorn">
+</div>
+
+<div id="buttonContainer">
+    <button id="myButton">Sick of squirrels?</button>
+</div>
+
+<script src="nuts.js"></script>
+
+<script>
+    const acorn = document.getElementById('acorn');
+    const buttonContainer = document.getElementById('buttonContainer');
+    const myButton = document.getElementById('myButton');
+
+    document.getElementById('container').addEventListener('mousemove', (event) => {
+        const { clientX, clientY } = event;
+
+        acorn.style.left = `${clientX - acorn.width / 2}px`;
+        acorn.style.top = `${clientY - acorn.height / 2}px`;
+    });
+
+    setTimeout(() => {
+        buttonContainer.style.display = 'block';
+    }, 10000);
+
+    myButton.addEventListener('click', () => {
+        window.location.href = 'houses.html';
+    });
+</script>
+
+</body>
+</html>
